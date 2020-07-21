@@ -3,6 +3,8 @@ package com.excercise.game.pp1;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static com.excercise.game.pp1.Exercise1.Counter.BUZZ;
+import static com.excercise.game.pp1.Exercise1.Counter.FIZZ;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
@@ -22,13 +24,13 @@ class Exercise1Test {
   void thirdIsFizz() {
     String result = sut.generate(3);
 
-    assertEquals(Exercise1.FIZZ, result);
+    assertEquals(FIZZ.name, result);
   }
 
   @Test
   @DisplayName("test 5 -> Buzz")
   void fifthIsBuzz() {
-    fail("Not implemented");
+    assertEquals(BUZZ.name, sut.generate(5));
   }
 
   @Test
