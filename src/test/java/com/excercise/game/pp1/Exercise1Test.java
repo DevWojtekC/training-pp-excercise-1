@@ -22,7 +22,7 @@ class Exercise1Test {
   void thirdIsFizz() {
     String result = sut.generate(3);
 
-    assertEquals("Fizz", result);
+    assertEquals(Exercise1.FIZZ, result);
   }
 
   @Test
