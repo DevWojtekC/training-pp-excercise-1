@@ -36,6 +36,10 @@ class Exercise1Test {
   @Test
   @DisplayName("test 15 -> Fizz\\nBuzz")
   void thirdAndFifthIsFizzBuzz() {
-    fail("Not implemented");
+    assertEquals(
+        String.format("%s\n%s", FIZZ.name, BUZZ.name),
+        sut.generate(15)
+    );
+
   }
 }
